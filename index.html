@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Entry Work - Accueil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #87CEEB, #FFFFFF);
+        }
+        .navbar {
+            background-color: #000000;
+        }
+        .navbar-brand {
+            color: #FFFFFF;
+        }
+        .navbar-brand:hover {
+            color: #CCCCCC; /* Eviter le rendu invisible lors du survol */
+        }
+        .navbar-nav .nav-link {
+            color: #FFFFFF;
+            margin-right: 15px; /* Espacement entre les menus */
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: #444444; /* Changement de couleur du fond lors du survol */
+            color: #FFFFFF;
+            border-radius: 5px;
+        }
+		.navbar-nav .nav-link.active {
+			background-color: #555555; /* Couleur de fond visible pour le menu actif */
+			color: #FFFFFF;
+			border-radius: 5px;
+		}
+        .section1, .section2 {
+            padding: 20px;
+            min-height: 300px; /* Assure une taille minimale pour les sections */
+        }
+		.navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28155, 155, 155, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.1); /* Bordure blanche autour de l'icône */
+        }
+        .section1 {
+            background-color: #000000;
+            color: #FFFFFF;
+            border-radius: 15px;
+        }
+        .section2 {
+            background-color: #FFFFFF;
+            color: #000000;
+            border-radius: 15px;
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #000000;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        .footer a {
+            color: #FFFFFF;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+                Captcha Entry Work
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tutorial.html">Tutorial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="download.html">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Section 1 -->
+            <div class="col-lg-6 section1 mb-4">
+                <img src="images/captcha_image.jpg" alt="Captcha Entry Work" class="img-fluid">
+                <h2 class="mt-4">Captcha Entry Work</h2>
+                <ul class="list-unstyled mt-3">
+                    <li class="d-flex align-items-center mb-2">
+                        <img src="images/keyboard.png" alt="Captcha Typing Job" width="30" height="30" class="me-2">
+                        Captcha Typing Job
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                        <img src="images/sport.png" alt="Free Bet on Sport" width="30" height="30" class="me-2">
+                        Free Bet on Sport
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                        <img src="images/autosolver.png" alt="Captcha AutoSolver" width="30" height="30" class="me-2">
+                        Captcha AutoSolver
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                        <img src="images/withdraw.png" alt="Daily Payment" width="30" height="30" class="me-2">
+                        Daily Payment
+                    </li>
+                </ul>
+                <a href="download.html" class="btn btn-light mt-3">Download the App</a>
+            </div>
+
+            <!-- Espacement entre les sections -->
+            <div class="col-lg-6 section2">
+                <img src="images/withdraw_methods.jpg" alt="Withdraw Methods" class="img-fluid">
+                <h2 class="mt-4">Withdraw Methods</h2>
+                <ul class="list-unstyled mt-3">
+                    <li class="d-flex align-items-center mb-2">
+                        <img src="images/om.png" alt="Orange Money" width="70" height="70" class="me-2">
+                        Orange Money
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                        <img src="images/momo.jpg" alt="Mobile Money" width="70" height="70" class="me-2">
+                        Mobile Money
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                        <img src="images/bch.png" alt="Bitcoin Cash" width="70" height="70" class="me-2">
+                        Bitcoin Cash
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=61561255527599">Facebook</a> |
+            <a href="https://chat.whatsapp.com/CChcke5ngQa7P5vzY268dy">WhatsApp</a> |
+            <a href="https://t.me/+ImDIzU8G0Q8yZTU0">Telegram</a> |
+            <span>Email: mngaetan16@gmail.com</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

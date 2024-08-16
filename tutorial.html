@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwoCaptchaBot - Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #87CEEB, #FFFFFF);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            flex: 1;
+        }
+
+        .navbar {
+            background-color: #000000;
+        }
+
+        .navbar-brand {
+            color: #FFFFFF;
+        }
+
+        .navbar-brand:hover {
+            color: #CCCCCC;
+        }
+
+        .navbar-nav .nav-link {
+            color: #FFFFFF;
+            margin-right: 15px;
+        }
+
+        .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+            background-color: #555555;
+            color: #FFFFFF;
+            border-radius: 5px;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28155, 155, 155, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .tutorial-section {
+            background-color: #FFFFFF;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .tutorial-section h2 {
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .tutorial-section hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        table th, table td {
+            border: 1px solid #DDDDDD;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #000000;
+            color: #FFFFFF;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .footer a {
+            color: #FFFFFF;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+                Captcha Entry Work
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Tutorial</a> <!-- Lien actif -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="download.html">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div class="container mt-5">
+        <div class="tutorial-section">
+            <h2>Captcha Instructions</h2>
+            <hr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Captcha</th>
+                        <th>Correct Answer</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 20 lignes du tableau avec exemples -->
+                    <tr>
+                        <td><img src="captcha_images/img4.png" alt="Captcha 1" width="100"></td>
+                        <td>j7cz</td>
+                        <td>Type the text without spaces</td>
+                    </tr>
+                    <tr>
+                        <td><img src="captcha_images/img14.png" alt="Captcha 1" width="100"></td>
+                        <td>YCEpgK</td>
+                        <td>The text is case sensitive</td>
+                    </tr>
+					<tr>
+                        <td><img src="captcha_images/img15.png" alt="Captcha 1" width="150"></td>
+                        <td>5S5GHHVP</td>
+                        <td>Type the first and second line</td>
+                    </tr>
+					<tr>
+                        <td><img src="captcha_images/img16.png" alt="Captcha 1" width="150"></td>
+                        <td>video tape</td>
+                        <td>simple CAPTCHA is entered without any problems</td>
+                    </tr>
+                    <!-- Ajoute 18 autres lignes similaires -->
+                    <tr>
+                        <td><img src="captcha_images/img10.png" alt="Captcha 1" width="200"></td>
+                        <td><img src="captcha_images/ans10.png" alt="Captcha 1" width="200"></td>
+                        <td>Click on images in order</td>
+                    </tr>
+					<tr>
+                        <td><img src="captcha_images/img12.png" alt="Captcha 1" width="200"></td>
+                        <td><img src="captcha_images/ans12.png" alt="Captcha 1" width="200"></td>
+                        <td>Click on images in order</td>
+                    </tr>
+					<tr>
+                        <td><img src="captcha_images/img5.png" alt="Captcha 1" width="250"></td>
+                        <td>1</td>
+                        <td></td>
+                    </tr>
+					<tr>
+                        <td><img src="captcha_images/img1.png" alt="Captcha 1" width="200"></td>
+                        <td><img src="captcha_images/ans1.png" alt="Captcha 1" width="200"></td>
+                        <td>Follow instructions</td>
+                    </tr>
+					<tr>
+                        <td><img src="captcha_images/img8.png" alt="Captcha 1" width="200"></td>
+                        <td><img src="captcha_images/ans8.png" alt="Captcha 1" width="200"></td>
+                        <td>Click on semi circle</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=61561255527599">Facebook</a> |
+            <a href="https://chat.whatsapp.com/CChcke5ngQa7P5vzY268dy">WhatsApp</a> |
+            <a href="https://t.me/+ImDIzU8G0Q8yZTU0">Telegram</a> |
+            <span>Email: mngaetan16@gmail.com</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
